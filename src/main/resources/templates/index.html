@@ -5,6 +5,8 @@
     <title>Title</title>
 </head>
 <body>
+<div th:replace="/fragments/nav-header :: h3"></div>
+<div th:replace="/fragments/nav-header :: site-user"></div>
 <h3 th:if="${username != null}" th:text="${'Current user: ' + username + ' with first name ' + firstName}"></h3>
 <h1>You have now been verified</h1>
 
